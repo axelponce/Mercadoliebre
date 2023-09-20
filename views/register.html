@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="logo-bar-dollar">
+                <div class="logo-search">
+                    <div class="logo-container">
+                        <img src="/images/logo-mercado-liebre.svg" class="logo-img" alt="Aqui va el logo">
+                    </div>
+                    <form class="Barra-de-busqueda">
+
+                        <input class="barra-contenido" type="text" placeholder="Burcar productos, marcas">
+
+                        <div class="btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="segundo parafo">
+                    <p><i class="fa-solid fa-hand-holding-dollar"></i><span>Comprá en cuotas y sin tarjeta de
+                            crédito</span>
+                    </p>
+                </div>
+            </nav>
+            <section class="barra-menu">
+                <ul class="lista-a">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="lista-b">
+                    <li><a href="/register">Creá tu cuenta</a><i class="fa-regular fa-address-card"></i></li>
+                    <li><a href="/login">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                    <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+            </section>
+            <div class="menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="container-1">
+            <h4>Ingrese sus datos</h4>
+            <form action="/home" method="get">
+                <div class="input-name-user-email">
+                    <label for="nombre-apellido"></label>
+                    <input type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y apellido" required>
+                </div>
+                <div class="input-name-user-email">
+                    <label for="nombre-usuario"></label>
+                    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="input-name-user-email">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                </div>
+                <h5>Fecha de nacimiento</h5>
+                <div class="address-date">
+                    <label for="fecha"></label>
+                    <input type="date" name="fecha" id="fecha" required>
+                </div>
+                <div class="address-date">
+                    <label for="domicilio"></label>
+                    <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                </div>
+                <h5>Perfil del usuario</h5>
+                <div class="container-shop-send">
+                    <div class="input-perfil">
+                        <input type="radio" name="perfil" value="Comprador">
+                        <label for="perfil">Comprador</label>
+                    </div>
+                    <div class="input-perfil">
+                        <input type="radio" name="perfil" value="Vendedor">
+                        <label for="perfil">Vendedor</label>
+                    </div>
+                </div>
+                <h5>Intereses</h5>
+                <div class="categorias-box">
+                    <input type="checkbox" name="categorias" value="Electro">
+                    <label for="categorias">Electro</label>
+                </div>
+                <div class="categorias-box">
+                    <input type="checkbox" name="categorias" value="Moda">
+                    <label for="categorias">Moda</label>
+                </div>
+                <div class="categorias-box">
+                    <input type="checkbox" name="categorias" value="Hogar">
+                    <label for="categorias">Hogar</label>
+                </div>
+                <div class="categorias-box">
+                    <input type="checkbox" name="categorias" value="Juguetería">
+                    <label for="categorias">Juguetería</label>
+                </div>
+                <div class="categorias-box">
+                    <input type="checkbox" name="categorias" value="Vida sana">
+                    <label for="categorias">Vida sana</label>
+                </div>
+                <h5>Seleccionar una imagen para perfil</h5>
+                <div>
+                    <label for=""></label>
+                    <input type="file" name="avatar" accept=".jpg" multiple>
+                </div>
+                <div class="box-password">
+                    <input type="password" name="Contraseña" id="contraseña" placeholder="Contraseña" required>
+                </div>
+                <div class="box-password">
+                    <input type="password" name="Contraseña-repetir" id="contraseña-repetir"
+                        placeholder="Repetir contraseña" required>
+                </div>
+                <div class="box-input">
+                    <div class="input-submit">
+                        <button type="submit">Enviar</button>
+                    </div>
+                    <div class="input-reset">
+                        <button type="reset">Borrar</button>
+                    </div>
+                </div>
+            </form>
+        </nav>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
